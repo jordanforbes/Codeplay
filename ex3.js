@@ -32,9 +32,8 @@ function pickDoor(door){
     return alert('congratulations you won a bottle of water!')
   } else if ( door == 'door 3'){
     return alert('congratulations you got nothing!')
-  } else {
-    return alert('what are you doing???')
-  }
 }
-
+}
+//You can ask (or query) the variable
+//for its datatype using the typeof operator
 pickDoor()
