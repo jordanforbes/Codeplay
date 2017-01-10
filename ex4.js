@@ -13,5 +13,5 @@
 
 var coolArray = ["Jake","John","Samantha","Billy"]
 for (var i = 0; i< coolArray.length; i++){
-  console.log(coolArray[i])
+  console.log(coolArray[i]+"")
 }
