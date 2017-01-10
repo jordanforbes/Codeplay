@@ -1,5 +1,5 @@
-var sayHello = function(person){
-  console.log("hello"+person_)
-}
+var z = 1;
 
-sayHello("Dylan")
+function print_it(){
+  console.log(z); //Will return 1
+}
