@@ -54,7 +54,16 @@ hundredCheck(101)
 //string stored in a variable is the same as
 //another string.
 
-function stringCheck()
+var t = "this is not the string you're looking for";
+
+function stringCheck(t){
+if(t == "this is the string you're looking for"){
+  return alert("You found it")
+}else if(t != "this is the string you're looking for"){
+  return alert("look somewhere else")
+}
+}
+stringCheck()
 
 
 //6.Declare a function that takes a
@@ -62,16 +71,48 @@ function stringCheck()
 //what name they've entered. Try running it
 //after it has been declared.
 
+function nameReader(name){
+  console.log(name)
+}
+
+nameReader('Jerry')
 
 //7.Declare a function that takes no arguments
 //but prints something to the console. Try
 //running it after it has been declared.
+
+function printSomething(){
+  console.log('something')
+}
+
+printSomething()
 
 //8.Declare a function that depending upon which
 //virtual 'door' was entered tells the user they've
 //received a different 'prize' in an alert.
 //After declaring the function, try running it with
 //different options. There must be at least 3 doors.
+
+function pickDoor(door){
+  if (door == 1){
+    return alert('You selected door number 1! Congratulations you won a jetski!')
+  } else if ( door == 2){
+    return alert('You selected door number 2! congratulations you won a bottle of water!')
+  } else if ( door == 3){
+    return alert('You selected door number 3! congratulations you won nothing!')
+  } else if ( door > 3 && door <= 20){
+    return alert('nope theres only three doors friendo')
+  } else if ( door > 20){
+    return alert ('what the hell are you doing?')
+  } else if ( door == 0){
+    return alert ('Oh come on dont be like that')
+  }
+}
+
+pickDoor()
+//You can ask (or query) the variable
+//for its datatype using the typeof operator
+
 
 //Code has a comment that notes which problem
 //the code snippet is attempting to solve.
